@@ -1,0 +1,49 @@
+linters:
+  enable-all: true
+  disable:
+    - lll
+    - wsl
+    - gci
+    - tagliatelle
+    - varnamelen
+    - ireturn
+    - exhaustivestruct
+    - exhaustruct
+    - goerr113
+    - ifshort
+    - funlen
+    - cyclop
+    - gocognit
+    - gocyclo
+    - maintidx
+    - gofumpt
+    - nolintlint
+    - gomnd
+    - nosnakecase
+    - interfacebloat
+    - errchkjson
+    - musttag
+    - paralleltest
+    - depguard
+
+    # deprecated
+    - scopelint
+    - golint
+    - interfacer
+    - maligned
+    - deadcode
+    - structcheck
+    - varcheck
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0 
+  exclude:
+    - "var-naming: don't use an underscore in package name"
+    - "ST1003: should not use underscores in package names"
+    - "var-naming: method"
+    - "ST1003: method"
+    - "var-naming: interface method parameter"
+    - "ST1003: interface method parameter"
+linters-settings:
+  unparam:
+    check-exported: true

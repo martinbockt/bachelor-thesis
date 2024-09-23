@@ -1,0 +1,1 @@
+podman build -t llm_scraper --build-arg command=llmscraper .
